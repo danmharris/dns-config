@@ -1,0 +1,8 @@
+---
+services:
+  dnsdist:
+    image: powerdns/dnsdist-18:1.8.3
+    ports:
+      - "53:53/udp"
+    volumes:
+      - ./dnsdist/dnsdist.conf:/etc/dnsdist/dnsdist.conf:ro
