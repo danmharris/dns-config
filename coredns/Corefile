@@ -1,5 +1,3 @@
-# Ansible managed
-
 dnhrrs.xyz {
     file zones/db.dnhrrs.xyz
 }
