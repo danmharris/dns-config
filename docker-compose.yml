@@ -2,6 +2,7 @@
 services:
   coredns:
     image: coredns/coredns:1.11.1
+    restart: always
     working_dir: /etc/coredns
     volumes:
       - ./coredns:/etc/coredns/:ro
@@ -11,5 +12,6 @@ services:
       TZ: Europe/London
     ports:
       - "53:53/udp"
+    restart: always
     volumes:
       - ./dnsdist/dnsdist.conf:/etc/dnsdist/dnsdist.conf:ro
