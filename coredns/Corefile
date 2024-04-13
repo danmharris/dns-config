@@ -1,3 +1,7 @@
+cluster.dnhrrs.xyz {
+    forward . 10.23.20.175
+}
+
 dnhrrs.xyz {
     file zones/db.dnhrrs.xyz
 }
