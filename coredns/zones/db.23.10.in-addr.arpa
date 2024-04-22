@@ -1,6 +1,6 @@
 ; vim:noexpandtab
 @	3600	IN	SOA	ns.dnhrrs.xyz. admin.dnhrrs.xyz. (
-				0002	; serial
+				0003	; serial
 				7200	; refresh (2 hours)
 				3600	; retry (1 hour)
 				1209600	; expire (2 weeks)
@@ -11,12 +11,10 @@ $ORIGIN 10.23.10.in-addr.arpa.
 
 $ORIGIN 20.23.10.in-addr.arpa.
 2		IN	PTR	rhubarb.dnhrrs.xyz.
+3		IN	PTR	lychee.dnhrrs.xyz.
+4		IN	PTR	cluster-api.dnhrrs.xyz.
 5		IN	PTR	nas.dnhrrs.xyz.
-52		IN	PTR	ct-coredns-prod-1.dnhrrs.xyz.
-53		IN	PTR	ct-unbound-prod-1.dnhrrs.xyz.
-54		IN	PTR	vm-k0s-prod-core1.dnhrrs.xyz.
 
 $ORIGIN 100.23.10.in-addr.arpa.
 1		IN	PTR	erx.dnhrrs.xyz.
 2		IN	PTR	switch0.dnhrrs.xyz.
-4		IN	PTR	lychee.dnhrrs.xyz.
